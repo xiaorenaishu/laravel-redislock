@@ -1,0 +1,29 @@
+{
+    "name": "cxr/laravel-redislock",
+    "description": "基于predis的分布式锁",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "predis/predis": "~1.1"
+    },
+    "require-dev": {
+        "predis/predis": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "RedisLock\\": "src/RedisLock"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "陈新仁",
+            "email": "1007795890@qq.com"
+        }
+    ],
+    "require": {}
+}
