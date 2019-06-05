@@ -4,16 +4,7 @@
 ### 引入 composer:
 
 ```
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git@git.qufenqi.com:chenxinren/laravel-redislock.git"
-        }
-    }
-```
-
-```
- composer require "cxr/laravel-redislock:v0.0.1"
+ composer require "cxr/laravel-redislock:dev-master"
 ```
 
 ### 如何使用
