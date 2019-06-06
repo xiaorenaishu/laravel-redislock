@@ -6,7 +6,7 @@
  * Time: 17:24
  */
 
-namespace RedisLock\DistributedLock;
+namespace RedisLock;
 
 use Illuminate\Support\Facades\Redis;
 
@@ -24,7 +24,7 @@ class DistributedLock
      */
     public static function lock($key, $lockExpire = 3, $connection = 'default')
     {
-        self::$requestId = uniqid();
+        self::$uniqid = uniqid();
         $result = Redis::connection($connection)->set($key, self::$uniqid, 'EX', $lockExpire, 'NX');
         return !is_null($result);
     }

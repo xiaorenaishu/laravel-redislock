@@ -1,10 +1,10 @@
 # 简易好用的redis分布式锁
-> 支持原子上锁，原子解锁，同端保证
+> 支持原子上锁，原子解锁，同端操作保证
 
 ### 引入 composer:
 
 ```
- composer require "cxr/laravel-redislock:dev-master"
+ composer require "cxr/laravel-redislock"
 ```
 
 ### 如何使用
